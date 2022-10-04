@@ -1,0 +1,132 @@
+html {
+  font-family: "Jost", sans-serif;
+  background-color: ivory;
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.intro {
+  color: gainsboro;
+}
+
+.intro:hover {
+  color: lavender;
+}
+
+h1 {
+  font-size: 4em;
+  margin-bottom: 0%;
+}
+
+h4 {
+  font-size: 2.5em;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-weight: 400;
+  font-style: italic;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+  color: lavender;
+}
+
+/* img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.answergrid {
+  font-style: italic;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.answergrid > div {
+  background-color: rgb(236, 236, 247);
+  border-radius: 8px;
+  padding: 30px;
+  width: 200px;
+  height: 250px;
+  /* cursor: pointer; */
+  transition: 0.4s;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  justify-items: center;
+  align-items: center;
+}
+
+.grid > div {
+  background-color: lightyellow;
+  border-radius: 8px;
+  padding: 30px;
+  /* cursor: pointer; */
+  transition: 0.4s;
+}
+
+/* .grid > img {
+  align-content: center;
+} */
+
+.grid > div:hover {
+  box-shadow: 0px 5px 10px lavender;
+}
+
+p {
+  text-indent: 3%;
+}
+
+.grid > div:active {
+  box-shadow: 0px 5px 10px ivory;
+  background-color: lavender;
+}
+
+ul.components li:first-of-type {
+  list-style: none;
+  margin-left: -1em;
+  text-decoration: underline;
+}
+
+ul.answers {
+  list-style-type: circle;
+}
+
+/* section:nth-child(even) {
+  background-color: lavenderblush;
+} */
+/* section:nth-child(odd) {
+  background-color: plum;
+} */
+
+section {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5vw;
+}
